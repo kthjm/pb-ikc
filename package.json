@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "white": "chin white -v",
+    "trans": "chin trans -v",
+    "pdf": "chin pdf -v",
+    "print": "chin print -v",
+    "merge": "chin merge -v"
+  },
+  "devDependencies": {
+    "chin": "^2.0.3",
+    "fs-extra": "^4.0.2",
+    "inkscape": "^1.1.1",
+    "npm-run-all": "^4.0.2",
+    "pdf-merge": "^1.0.1"
+  }
+}
