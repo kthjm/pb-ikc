@@ -1,8 +1,8 @@
 import Inkscape from "inkscape"
-const { CHIN_ENV } = process.env
+
+const { ext, config } = envMap.get(process.env.CHIN_ENV)
 
 export default (opts) => {
-  const { ext, config } = envMap.get(CHIN_ENV)
   opts.ext = ext
   return pipe => pipe(new Inkscape(config))
 }
