@@ -1,4 +1,4 @@
-# personal boilerplate for inkschin
+# personal boilerplate for Inkscape/chin
 
 ## scripts
 - trans
