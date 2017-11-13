@@ -1,16 +1,23 @@
 {
   "scripts": {
-    "white": "chin white -v",
     "trans": "chin trans -v",
+    "white": "chin white -v",
     "pdf": "chin pdf -v",
     "print": "chin print -v",
     "merge": "chin merge -v"
   },
   "devDependencies": {
-    "chin": "^2.0.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chin": "^2.1.0",
     "fs-extra": "^4.0.2",
     "inkscape": "^1.1.1",
     "npm-run-all": "^4.0.2",
     "pdf-merge": "^1.0.1"
+  },
+  "babel": {
+    "presets": [
+      ["env", { "targets": { "node": "current" } }]
+    ]
   }
 }

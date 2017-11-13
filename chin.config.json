@@ -1,27 +1,27 @@
 {
-  "white": {
-    "put": "./src/single",
-    "out": "./dist/white",
-    "process": ["inkToPngWhite", null, 1]
-  },
   "trans": {
     "put": "./src/single",
     "out": "./dist/trans",
-    "process": ["inkToPngTrans", null, 1]
+    "process": ["justInkscape", null, 1]
+  },
+  "white": {
+    "put": "./src/single",
+    "out": "./dist/white",
+    "process": ["justInkscape", null, 1]
   },
   "pdf": {
     "put": "./src/single",
     "out": "./dist/pdf",
-    "process": ["inkToPdf", null, 1]
+    "process": ["justInkscape", null, 1]
   },
   "print": {
     "put": "./src/single",
     "out": "./dist/print",
-    "process": ["inkToPrint", null, 1]
+    "process": ["justInkscape", null, 1]
   },
   "merge": {
     "put": "./src/merge",
     "out": "./dist/merge",
-    "process": ["inkToPdfsToMerge", null, 1]
+    "process": ["mergeInkscape", null, 1]
   }
 }

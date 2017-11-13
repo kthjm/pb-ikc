@@ -1,5 +1,7 @@
+dist/white/
 dist/pdf/
 dist/print/
+dist/merge/
 
 # Logs
 logs

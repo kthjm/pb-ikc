@@ -1,8 +1,8 @@
-# personal boilerplate for media
+# personal boilerplate for inkschin
 
 ## scripts
-- white
 - trans
+- white
 - pdf
 - print
 - merge
