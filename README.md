@@ -1,11 +1,11 @@
 # personal boilerplate for Inkscape/chin
 
-## scripts
+<!-- ## scripts
 - trans
 - white
 - pdf
 - print
-- merge
+- merge -->
 
 ## relate
 - [inkscape options](https://inkscape.org/en/doc/inkscape-man.html)

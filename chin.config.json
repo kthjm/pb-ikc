@@ -1,27 +1,37 @@
 {
   "trans": {
-    "put": "./src/single",
+    "put": "./src",
     "out": "./dist/trans",
-    "process": ["justInkscape", null, 1]
+    "process": {
+      "svg": ["InkPng", null, "stream"]
+    }
   },
   "white": {
-    "put": "./src/single",
+    "put": "./src",
     "out": "./dist/white",
-    "process": ["justInkscape", null, 1]
+    "process": {
+      "svg": ["InkPngWhite", null, "stream"]
+    }
   },
   "pdf": {
-    "put": "./src/single",
+    "put": "./src",
     "out": "./dist/pdf",
-    "process": ["justInkscape", null, 1]
+    "process": {
+      "svg": ["InkPdf", null, "stream"]
+    },
+    "weirs": [
+      ["./merge", ["InkPdfMerge", null, "stream"]],
+      ["./printable/pamphlet", ["InkPdfMerge", null, "stream"]]
+    ]
   },
   "print": {
-    "put": "./src/single",
-    "out": "./dist/print",
-    "process": ["justInkscape", null, 1]
-  },
-  "merge": {
-    "put": "./src/merge",
-    "out": "./dist/merge",
-    "process": ["mergeInkscape", null, 1]
+    "put": "./src/printable",
+    "out": "./dist/printed",
+    "process": {
+      "svg": ["InkPdfPrint", null, "stream"]
+    },
+    "weirs": [
+      ["./pamphlet", ["InkPdfMergePrint", null, "stream"]]
+    ]
   }
 }

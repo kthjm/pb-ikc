@@ -1,2 +1,1 @@
-require("babel-register")
-module.exports = require("./.chin")
+module.exports = require("chin-plugins-inkscape")

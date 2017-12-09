@@ -1,23 +1,20 @@
 {
+  "license": "MIT",
   "scripts": {
-    "trans": "chin trans -v",
-    "white": "chin white -v",
-    "pdf": "chin pdf -v",
-    "print": "chin print -v",
-    "merge": "chin merge -v"
+    "pipe": "chin -v",
+    "png:trans": "yarn pipe trans",
+    "png:white": "yarn pipe white",
+    "png:all": "run-s png:trans png:white",
+    "png": "yarn png:white",
+    "pdf:single": "yarn pipe pdf",
+    "pdf:print": "yarn pipe print",
+    "pdf:all": "run-s pdf:single pdf:print",
+    "pdf": "yarn pdf:single",
+    "all": "run-s png:all pdf:all"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.26.0",
-    "chin": "^2.1.0",
-    "fs-extra": "^4.0.2",
-    "inkscape": "^1.1.1",
-    "npm-run-all": "^4.0.2",
-    "pdf-merge": "^1.0.1"
-  },
-  "babel": {
-    "presets": [
-      ["env", { "targets": { "node": "current" } }]
-    ]
+    "chin": "^2.1.2",
+    "chin-plugins-inkscape": "https://github.com/kthjm/chin-plugins-inkscape",
+    "npm-run-all": "^4.0.2"
   }
 }
