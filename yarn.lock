@@ -75,7 +75,7 @@ chalk@^2.1.0:
 
 "chin-plugins-inkscape@https://github.com/kthjm/chin-plugins-inkscape":
   version "0.0.0"
-  resolved "https://github.com/kthjm/chin-plugins-inkscape#68f43aef8a1a9e2492c90250b6aff186eefe0ecc"
+  resolved "https://github.com/kthjm/chin-plugins-inkscape#1c193385134b9d7dbec8a2600a49a07a79118f26"
   dependencies:
     fs-extra "^4.0.3"
     inkscape "^1.2.0"

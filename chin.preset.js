@@ -1,1 +1,1 @@
-module.exports = require("chin-plugins-inkscape")
+module.exports = require("chin-plugins-inkscape").default()
